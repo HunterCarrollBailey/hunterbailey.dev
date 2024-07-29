@@ -1,0 +1,62 @@
+{
+  "projects": [
+    {
+      "name": "huntercbailey.dev",
+      "description": "This is the site you are currently viewing! I created this to be a digital resume and more about me, including things like favorite tech stacks a deeper dive into my skillsets, to talk about my book, and any articles I may end up writing. This will be my personal site so it may change frequently or not at all depending on how much I want to do with it.",
+      "techStack": [
+        { "name": "ReactJS" },
+        { "name": "TailwindCSS" },
+        { "name": "Vite" }
+      ],
+      "link": "https://github.com/HunterCarrollBailey/bailey.dev"
+    },
+    {
+      "name": "Enchanted Rose Innovations",
+      "description": "Enchanted Rose Innovations or ERI is the business name in which I manage and sell Acolyte under. This is also the business that manages some of my other projects such as Project Alchemist which is an add-on to Acolyte but also functions as a standalone application.",
+      "techStack": [
+        { "name": "VueJS" },
+        { "name": "MDBoostrap" },
+        { "name": "Vite" },
+        { "name": "Postgres" }
+      ],
+      "link": "https://enchantedroseinnovators.com"
+    }, 
+    {
+        "name": "un-Traditional Magick",
+        "description": "My first client in web development, they needed assistance in re-desiging their web presence after significant re-branding. They were the initial adopters of Acolyte, and were a great help in developing it into the platform it is today.",
+        "techStack": [
+        { "name": "Laravel" },
+        { "name": "MySQL" },
+        { "name": "JavaScript" },
+        { "name": "Vite" },
+        { "name": "MDBootstrap" },
+        { "name": "SaSS" }
+        ],
+        "link": "https://un-traditionalmagick.com"
+    },
+    {
+        "name": "Acolyte R.E.A.L.M.S",
+        "description": "This is what I lovingly call my life's work, or my Magnum Opus. It is a custom Remote Engagement and Learning Management System (R.E.A.L.M.S.) I designed from the ground up and created myself. un-Traditional Magick used version 4 before going on a hiatus, and I am currently working on version 5, which is set to release late 2024.",
+        "techStack": [
+            { "name": "Laravel" },
+            { "name": "MySQL" },
+            { "name": "JavaScript" },
+            { "name": "Redis" },
+            { "name": "Vite" },
+            { "name": "MDBootstrap" },
+            { "name": "SaSS" },
+            { "name": "Python" }
+        ],
+        "link": "https://enchantedroseinnovations.com/acolyte"
+    },
+    {
+        "name": "Project Alchemist",
+        "description": "This is an add-on that I am developing for Acolyte that will use Python and C++. It is a Machine Learning add-on that analyzes data about the system and content and provides feedback to the administrators, and can be helpful in answering questions students may have.",
+        "techStack": [
+            { "name": "Python" },
+            { "name": "C++" }
+        ],
+        "link": ""
+    }
+  ]
+}

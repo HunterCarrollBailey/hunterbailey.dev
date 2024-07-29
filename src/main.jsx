@@ -9,9 +9,9 @@ import {
 import Layout from './components/Layout.jsx';
 import Home from './routes/Home.jsx';
 import About from './routes/About.jsx';
-// import Projects from './routes/Projects.jsx';
-// import Tech from './routes/Tech.jsx';
-// import Resume from './routes/Resume.jsx';
+import Projects from './routes/Projects.jsx';
+import Book from './routes/Book.jsx';
+import Resume from './routes/Resume.jsx';
 // import Contact from './routes/Contact.jsx';
 import ErrorPage from './routes/404.jsx';
 
@@ -27,18 +27,18 @@ const router = createBrowserRouter([
     path: "/about",
     element: <Layout><About /></Layout>
   },
-  // {
-  //   path: "/projects",
-  //   element: <Layout><Projects /></Layout>
-  // },
-  // {
-  //   path: "/tech",
-  //   element: <Layout><Tech /></Layout>
-  // },
-  // {
-  //   path: "/resume",
-  //   element: <Layout><Resume /></Layout>
-  // },
+  {
+    path: "/projects",
+    element: <Layout><Projects /></Layout>
+  },
+  {
+    path: "/book",
+    element: <Layout><Book /></Layout>
+  },
+  {
+    path: "/resume",
+    element: <Layout><Resume /></Layout>
+  },
   // {
   //   path: "/contact",
   //   element: <Layout><Contact /></Layout>

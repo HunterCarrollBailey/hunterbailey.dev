@@ -11,6 +11,8 @@ export default {
         'projects' : "url(assets/Projects.png)",
         'headshot' : "url(assets/Headshot.jpg)",
         'skills' : "url(assets/skills-bg.png)",
+        'forest1': "url(assets/FallForest1.png)",
+        'forest2': "url(assets/FallForest2.png)"
       }
     },
   },

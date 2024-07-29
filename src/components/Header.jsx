@@ -31,7 +31,7 @@ function Header() {
           </NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/tech">Tech Stacks</NavLink>
+          <NavLink to="/book">My Book</NavLink>
           <NavLink to="/resume">Resume</NavLink>
           <NavLink to="/contact">Contact</NavLink>
           <NavLink
@@ -54,7 +54,7 @@ function Header() {
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/projects">Projects</NavLink>
-          <NavLink to="/tech">Tech Stacks</NavLink>
+          <NavLink to="/book">My Book</NavLink>
           {/* <NavLink to="#blog">Blog</NavLink> */}
           <NavLink to="/resume">Resume</NavLink>
           <NavLink to="/contact">Contact</NavLink>

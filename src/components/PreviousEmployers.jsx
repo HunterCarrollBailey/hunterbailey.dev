@@ -7,7 +7,7 @@ export default function PreviousEmployers() {
     <div className="flex flex-col w-full">
       <h2 className="text-3xl text-slate-700 font-bold">Previous Employers</h2>
       <ul className="*:mt-[3%] *:ring-1 *:ring-inset *:ring-slate-300 *:rounded-full *:shadow-xl *:px-3 *:py-2 *:flex *:items-center *:text-md">
-        <li>
+        <li className="bg-slate-200">
           <span>
             <img
               src={uw}
@@ -17,7 +17,7 @@ export default function PreviousEmployers() {
           </span>
           University of Washington
         </li>
-        <li>
+        <li className="bg-slate-200">
           <span>
             <img
               src={eri}
@@ -27,7 +27,7 @@ export default function PreviousEmployers() {
           </span>
           Enchanted Rose Innovations
         </li>
-        <li>
+        <li className="bg-slate-200">
           <span>
             <img
               src="https://img.logo.dev/carbonrobotics.com?token=pk_Xa9ds_h4SCSJh9HvywtIlw"
@@ -37,7 +37,7 @@ export default function PreviousEmployers() {
           </span>
           Carbon Robotics
         </li>
-        <li>
+        <li className="bg-slate-200">
           <span>
             <img
               src="https://img.logo.dev/coupa.com?token=pk_Xa9ds_h4SCSJh9HvywtIlw"
