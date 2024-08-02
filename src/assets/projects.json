@@ -1,62 +1,65 @@
 {
   "projects": [
     {
-      "name": "huntercbailey.dev",
-      "description": "This is the site you are currently viewing! I created this to be a digital resume and more about me, including things like favorite tech stacks a deeper dive into my skillsets, to talk about my book, and any articles I may end up writing. This will be my personal site so it may change frequently or not at all depending on how much I want to do with it.",
-      "techStack": [
-        { "name": "ReactJS" },
-        { "name": "TailwindCSS" },
-        { "name": "Vite" }
+      "colStart": "3",
+      "rowStart": "1",
+      "title": "Enchanted Rose Innovations",
+      "description": "This is the web application that describes the business, and the core values I stick too when doing independent work. While also providing me a backend interface to manage my projects deployed on digital ocean. It is built in React, NextJS, and TailwindCSS, leveraging the use of the Digital Ocean API, as well as getting diagnostics of currently deployed applications via their own respective API's.",
+      "skills": ["React", "NextJS", "TailwindCSS"],
+      "linkType": "site",
+      "link": "https://enchantedroseinnovations.com"
+    },
+    {
+      "colStart": "5",
+      "rowStart": "1",
+      "title": "Acolyte R.E.A.L.M.S.",
+      "description": "This is my Magnum Opus, the project born out of the request made when I formed Enchanted Rose Innovations. A Remote Engagement and Learning Management System designed and programmed entirely by myself. It has undergone many iterations and version 4 is currently in use, version 5 is in active development and is scheduled for release in early 2025.",
+      "skills": [
+        "Laravel",
+        "MDBoostrap",
+        "MySQL",
+        "JavaScript",
+        "QuillJS",
+        "FullCalendarJS"
       ],
-      "link": "https://github.com/HunterCarrollBailey/bailey.dev"
+      "linkType": "site",
+      "link": "https://enchantedroseinnovations.com/acolyte"
     },
     {
-      "name": "Enchanted Rose Innovations",
-      "description": "Enchanted Rose Innovations or ERI is the business name in which I manage and sell Acolyte under. This is also the business that manages some of my other projects such as Project Alchemist which is an add-on to Acolyte but also functions as a standalone application.",
-      "techStack": [
-        { "name": "VueJS" },
-        { "name": "MDBoostrap" },
-        { "name": "Vite" },
-        { "name": "Postgres" }
-      ],
-      "link": "https://enchantedroseinnovators.com"
-    }, 
-    {
-        "name": "un-Traditional Magick",
-        "description": "My first client in web development, they needed assistance in re-desiging their web presence after significant re-branding. They were the initial adopters of Acolyte, and were a great help in developing it into the platform it is today.",
-        "techStack": [
-        { "name": "Laravel" },
-        { "name": "MySQL" },
-        { "name": "JavaScript" },
-        { "name": "Vite" },
-        { "name": "MDBootstrap" },
-        { "name": "SaSS" }
-        ],
-        "link": "https://un-traditionalmagick.com"
+      "colStart": "5",
+      "rowStart": "3",
+      "title": "un-Traditional Magick",
+      "description": "This is my first client where I re-designed the front end of their website, and they used Acolyte v4 until recently. While currently on haitus I keep them as a reference for posterity.",
+      "skills": ["TailwindCSS", "JavaScript"],
+      "linkType": "site",
+      "link": "https://un-traditionalmagick.com"
     },
     {
-        "name": "Acolyte R.E.A.L.M.S",
-        "description": "This is what I lovingly call my life's work, or my Magnum Opus. It is a custom Remote Engagement and Learning Management System (R.E.A.L.M.S.) I designed from the ground up and created myself. un-Traditional Magick used version 4 before going on a hiatus, and I am currently working on version 5, which is set to release late 2024.",
-        "techStack": [
-            { "name": "Laravel" },
-            { "name": "MySQL" },
-            { "name": "JavaScript" },
-            { "name": "Redis" },
-            { "name": "Vite" },
-            { "name": "MDBootstrap" },
-            { "name": "SaSS" },
-            { "name": "Python" }
-        ],
-        "link": "https://enchantedroseinnovations.com/acolyte"
+      "colStart": "3",
+      "rowStart": "4",
+      "title": "Project Alchemist",
+      "description": "This is an Add-On to Acolyte, the goal of this project is to be an LLM that is developed and trained in-house that has the ability to learn from the content placed into Acolyte and have the ability to make content suggestions and answer students questions.",
+      "skills": ["Python", "C++"],
+      "linkType": "GitHub",
+      "link": "https://enchantedroseinnovations.com/project_alchemist"
     },
     {
-        "name": "Project Alchemist",
-        "description": "This is an add-on that I am developing for Acolyte that will use Python and C++. It is a Machine Learning add-on that analyzes data about the system and content and provides feedback to the administrators, and can be helpful in answering questions students may have.",
-        "techStack": [
-            { "name": "Python" },
-            { "name": "C++" }
-        ],
-        "link": ""
+      "colStart": "1",
+      "rowStart": "4",
+      "title": "Project Blue Rose",
+      "description": "This is a desktop application made to help set up initial project scaffolding and development environments using Docker, that way no dependencies are left behind or forgotten about when starting new projects.",
+      "skills": ["Python", "Docker", "Nginx", "MySQL", "PostgresSQL", "NodeJS"],
+      "linkType": "GitHub",
+      "link": "#"
+    },
+    {
+      "colStart": "1",
+      "rowStart": "1",
+      "title": "A Warrior's Journey",
+      "description": "In the beginning of 2024 I set a goal for myself to write my life story to date. I've written poetry for years, and when faced with this task I decided to turn the story into a series of poems starting from early childhood to my positive outlook on life now. After many nights writing I finally had a draft and upon reading it made the bold decision to publish it for anyone to see. I aquired and ISBN Number and started the work of publishing through Barnes & Nobel Press. I am currently waiting on my Author's copy and once I have reviewed the print quality I plan on approving the design and listing it for sale on Barnes & Nobel, Amazon, and donating a few copies to some local libraries here in Seattle. Once the item is listed I will place a link to my author profile in the top with the Github, Spotify, etc links as well as in this section here..",
+      "skills": ["Poetry", "Creative Writing", "Cover Design", "Self-Publishing", "Author"],
+      "linkType": "GitHub",
+      "link": "https://github.com/HunterCarrollBailey"
     }
   ]
 }

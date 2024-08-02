@@ -13,3 +13,13 @@
         scrollbar-width: none;  /* Firefox */
   }
 }
+@layer base {
+    @font-face {
+        font-family: 'Tenor';
+        src: url('assets/fonts/TenorSans-Regular.ttf');
+    }
+    @font-face {
+        font-family: 'SedanSC';
+        src: url('assets/fonts/SedanSC-Regular.ttf');
+    }
+}
