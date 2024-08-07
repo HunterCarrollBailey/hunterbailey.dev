@@ -4,14 +4,14 @@ const ProjectsList = [
   {
     "name": "Acolyte",
     "details": "A remote engagement and learning management system build from the ground up by myself.",
-    "github": "https://github.com/HunterCarrollBailey/Acolyte-R.E.A.L.M.S.",
+    "github": "https://github.com/HunterCarrollBailey/Acolyte-v4",
     "demo": "",
-    "site": "https://acolyte.enchantedroseinnovations.com"
+    "site": ""
   },
   {
     "name": "un-Traditional Magick",
     "details": "My first client and close friend. A custom website backed by Acolyte v4.",
-    "github": "",
+    "github": "https://github.com/HunterCarrollBailey/unTraditionalMagick-Acolyte",
     "demo": "",
     "site": "https://un-traditionalmagick.com"
   }
