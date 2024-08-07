@@ -4,6 +4,7 @@ import Headshot from "@/assets/Headshot.jpg";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaSpotify } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
+import Resume from "@/assets/curriculum-vitae.pdf";
 
 export default function Hero() {
   return (
@@ -40,7 +41,7 @@ export default function Hero() {
             Dynamic and results-oriented software developer with over 6 years of experience in application development, technical support, and process optimization. With proven expertise in building custom solutions using Laravel, NodeJS, JavaScript, SaSS, MySQL, Postgres, and more. I have a strong track record of enhancing user experience and project management. 
           </section>
           <button className="bg-slate-950/50 ring-1 ring-cyan-800 px-2 py-1 rounded-lg text-md shadow shadow-cyan-800 hover:-translate-y-1 hover:shadow-md hover:shadow-cyan-800 mb-5">
-            Download Resume
+            <Link href={Resume} target="_blank">Download Resume</Link>
           </button>
           <section id="socials">
             <ul className="flex flex-row gap-5 justify-center text-3xl text-cyan-300">
