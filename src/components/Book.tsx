@@ -1,6 +1,7 @@
 import Image from "next/image";
 import BookCoverFront from "@/assets/BookCoverFront.jpg";
 import BookCoverBack from "@/assets/BookCoverBack.jpg";
+import Link from "next/link";
 export default function Book() {
   return (
     <section id="book" className="p-5 lg:w-[55dvw]">
@@ -12,10 +13,6 @@ export default function Book() {
           book. This evolved into telling my story from a young child dealing
           with trauma to the hopefull outlook I have for life now that I have
           found a home in Seattle.
-        </p>
-        <p className="text-justify leading-relaxed mb-4">
-          I am currently waiting on my Author{`'`}s copy, once I have that the
-          book will be listed for sale on a variety of platforms.
         </p>
         <div className="flex flex-row flex-wrap lg:flex-nowrap gap-5 justify-center">
           <div className="basis-2/3 md:basis-1/3 lg:basis-1/4">
@@ -37,6 +34,7 @@ export default function Book() {
               <li>ISBN: 9798218480882</li>
               <li>Title: A Warrior{`'`}s Journey</li>
               <li>Publication Date: July 26th, 2024</li>
+              <li><Link href={"https://www.barnesandnoble.com/w/a-warriors-journey-hunter-bailey/1146141656?ean=9798218480882"} target="_blank" className="text-cyan-400 font-bold">B&N Listing</Link></li>
             </ul>
           </div>
         </div>
