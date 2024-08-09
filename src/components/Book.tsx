@@ -34,7 +34,7 @@ export default function Book() {
               <li>ISBN: 9798218480882</li>
               <li>Title: A Warrior{`'`}s Journey</li>
               <li>Publication Date: July 26th, 2024</li>
-              <li><Link href={"https://www.barnesandnoble.com/w/a-warriors-journey-hunter-bailey/1146141656?ean=9798218480882"} target="_blank" >B&N Listing</Link></li>
+              <li><Link href={"https://www.barnesandnoble.com/w/a-warriors-journey-hunter-bailey/1146141656?ean=9798218480882"} target="_blank" className="text-cyan-400 font-bold">B&N Listing</Link></li>
             </ul>
           </div>
         </div>
