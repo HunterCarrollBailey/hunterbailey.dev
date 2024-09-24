@@ -19,7 +19,7 @@ export default function Hero() {
             alt="Profile image of Hunter Bailey."
             className="rounded-full ring-4 ring-cyan-400 w-[25dvw] md:w-[20dvw] lg:w-[15dvw] xl:w-[10dvw] -translate-y-12 shadow-xl shadow-cyan-800"
           />
-          <h1 className="-translate-y-7 font-bold text-4xl font-heading">Hunter Bailey</h1>
+          <h1 className="-translate-y-7 font-bold text-4xl font-heading">Bailey Carroll</h1>
           <h2 className="-translate-y-5 font-semibold text-2xl font-heading">
             Specialized In{" "}
             <span className="text-cyan-400">
@@ -46,10 +46,10 @@ export default function Hero() {
           <section id="socials">
             <ul className="flex flex-row gap-5 justify-center text-3xl text-cyan-300">
               <li>
-              <Link href="https://github.com/HunterCarrollBailey" target="_blank"><FaGithub /></Link>
+              <Link href="https://github.com/baileycarroll" target="_blank"><FaGithub /></Link>
               </li>
               <li>
-              <Link href="https://www.linkedin.com/in/huntercbailey" target="_blank"><FaLinkedin /></Link>
+              <Link href="https://www.linkedin.com/in/baileycarroll/" target="_blank"><FaLinkedin /></Link>
               </li>
               <li>
               <Link href="https://open.spotify.com/user/21fwvqec332fp7apchtqe2z7y" target="_blank"><FaSpotify /></Link>

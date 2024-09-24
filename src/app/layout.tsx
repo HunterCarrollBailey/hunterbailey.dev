@@ -6,7 +6,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Hunter Bailey",
+  title: "Bailey Carroll",
   description: "Portfolio & Digital Resume",
 };
 
@@ -18,6 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+      <title>{metadata["title"] as String}</title>
       <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       {/* <!-- Google tag (gtag.js) --> */}
