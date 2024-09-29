@@ -7,8 +7,7 @@ const events = [
     dates: "April 2024 - Current",
     title: "Sr. Computer Specialist",
     employer: "University of Washington",
-    details:
-      "Build, Maintain, and Administer the on-premise Atlassian DataCenter Suite of products. Including developing and maintaining custom integration and authentication plugins. Revamping existing documentation for Atlassian products, including User / Admin Guides, How Tos and Best Practices. Managing & Supporting the Enterprise GitHub Account.",
+    details: "Upgraded Java-based integrations from Java 8 to 11, incorporating X.509 certificate authentication for secure communication. Redesigned application and database server architecture, optimizing access to Confluence Plugins and securing the database. Reduced technical debt by upgrading servers and streamlining infrastructure, cutting server count from 7 to 5. Created an Atlassian product guidebook, improved system indexing by 200% through asset cleanup, and implemented change management procedures to enhance process efficiency and reduce testing errors.",
     skills: [
       "Java 8",
       "PostgreSQL",
@@ -22,31 +21,10 @@ const events = [
     link: "https://uw.edu",
   },
   {
-    dates: "May 2017 - Current",
-    title: "Founder / Lead Developer",
-    employer: "Enchanted Rose Innovations",
-    details:
-      "I started ERI when a close friend approached me with a need for a custom website and a platform to deliver recorded lessons for a class they taught. In the time since that platform has evolved into Acolyte, and this is the business name in which I develop and license Acolyte under.",
-    skills: [
-      "React",
-      "TypeScript",
-      "Python",
-      "TailwindCSS",
-      "Laravel Framework",
-      "MySQL",
-      "PostgreSQL",
-      "Redis",
-      "SMPT",
-      "API Integrations",
-    ],
-    link: "",
-  },
-  {
     dates: "June 2022 - April 2024",
     title: "Sr. Support Engineer",
     employer: "Carbon Robotics",
-    details:
-      'Developed an MVP of a Support Account Management tool in collaboration with Product and Engineering. Authored the original troubleshooting guidelines and scenarios. In doing so reviewed existing sourcecode to gather troubleshooting commands for the product. Served as the "Support Program Manager" and the Atlassian Architect & Administrator for the implemention of Jira Software and Confluence. Authored the original training and onboarding resources for new support hires. Worked closely with the Director of Support to build and guide the team to success. Starting from a 5x10 schedule to a 7x24 schedule. Assisted the Director with the implementation of Tableau as the primary data analysis tool, desiging and implementing initial data flows. With that I helped automate the weekly customer reports taking the manual creation time of over 8+ hours a week to just under 1 hour for review.',
+    details:"Led the company-wide rollout of Jira Software and Confluence, achieving 100% user adoption, and developed comprehensive technical documentation. Built a Python/Flask web application with Redis, improving team efficiency by 10%. Collaborated on an MVP with TypeScript and Go, and automated performance reports, reducing manual effort from 16 to 2 hours weekly. Created onboarding programs, integrating 7 engineers in 4 weeks, and scaled support operations from a 6x16 to a 7x24 schedule, expanding the team from 2 to 10 engineers.",
     skills: [
       "Technical Support",
       "Leadership",
@@ -61,6 +39,21 @@ const events = [
       "Data Reporting",
     ],
     link: "https://carbonrobotics.com",
+  },
+  {
+    dates: "March 2020 - June 2022",
+    title: "L3 Advanced Support Engineer",
+    employer: "Coupa Software",
+    details: "Overhauled global training processes, leading to a 45% increase in positive feedback, and delivered technical training for Senior Engineers. Conducted root cause analysis and resolved product issues using MySQL and Ruby, supported testing cycles, and enhanced internal knowledge base usability by 15%. Also performed system analysis and monitoring using Kibana, Grafana, and Ruby on Rails.",
+    skills: [
+      "Rails",
+      "Kibana",
+      "Grafana",
+      "MySQL",
+      "Unit/Integration Testing",
+      "Technical Training",
+    ],
+    link: "https://coupa.com",
   },
 ];
 

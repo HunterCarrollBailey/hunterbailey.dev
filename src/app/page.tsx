@@ -1,22 +1,20 @@
-import Book from "@/components/Book";
 import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 export default function Home() {
   return (
-    <div>
-      <div className="flex flex-col lg:flex-row lg:flex-wrap justify-center">
-        <div className="flex flex-col lg:w-[45dvw] xl:w-[35dvw]">
+      <div className='grid grid-cols-2 mt-5'>
+        <div className="col-span-2 md:col-span-1">
           <Hero />
-          <Skills />
+            <Skills />
+        </div>
+        <div className="col-span-2 md:col-span-1">
           <Projects />
         </div>
-        <div className="flex flex-col lg:w-[55dvw] lg:mt-5">
+        <div className='col-span-2'>
           <Experience />
-          <Book />
         </div>
       </div>
-    </div>
   );
 }

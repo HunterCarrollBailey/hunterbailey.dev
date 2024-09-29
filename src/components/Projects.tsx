@@ -3,17 +3,24 @@ import { FaDesktop, FaGlobe, FaGithub } from "react-icons/fa";
 const ProjectsList = [
   {
     "name": "Acolyte",
-    "details": "A remote engagement and learning management system build from the ground up by myself.",
-    "github": "https://github.com/HunterCarrollBailey/Acolyte-v4",
+    "details": "Designed and developed a custom Remote Engagement and Learning Management System from the ground up, currently developing version 5 with a planned release in mid-2025.",
+    "github": "https://github.com/baileycarroll/Acolyte-v4",
     "demo": "",
     "site": ""
   },
   {
-    "name": "un-Traditional Magick",
-    "details": "My first client and close friend. A custom website backed by Acolyte v4.",
-    "github": "https://github.com/HunterCarrollBailey/unTraditionalMagick-Acolyte",
+    "name": "A Warrior's Journey",
+    "details": "Authored and self-published a freestyle poetry book, demonstrating strong communication skills. Applied project management techniques to take the book from initial concept to publication, while showcasing resilience, creativity, and an aptitude for tackling challenging subjects–qualities that complement the essential skill of problem solving.",
+    "github": "",
     "demo": "",
-    "site": "https://un-traditionalmagick.com"
+    "site": "Authored and self-published a freestyle poetry book, demonstrating strong communication skills. Applied project management techniques to take the book from initial concept to publication, while showcasing resilience, creativity, and an aptitude for tackling challenging subjects–qualities that complement the essential skill of problem solving."
+  },
+  {
+    "name": "Corpus Vitae",
+    "details": "Building a comprehensive fitness, meal, and life-tracking app using Flutter for Android/iOS with a MySQL database for cloud storage, starting with SQLite for local storage and expanding to a web service.",
+    "github": "https://github.com/baileycarroll/CorpusVitae",
+    "demo": "",
+    "site": ""
   }
 ]
 export default function Projects() {

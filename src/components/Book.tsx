@@ -4,7 +4,7 @@ import BookCoverBack from "@/assets/BookCoverBack.jpg";
 import Link from "next/link";
 export default function Book() {
   return (
-    <section id="book" className="p-5 lg:w-[55dvw]">
+    <section id="book" className="p-5">
       <div className="bg-slate-950/50 backdrop-blur shadow-md shadow-cyan-800 rounded-2xl p-5 flex flex-col items-center">
         <h2 className="text-2xl text-center font-semibold font-heading">I Wrote A Book!</h2>
         <p className="text-justify leading-relaxed mt-2 mb-2">
