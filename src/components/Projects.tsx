@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaDesktop, FaGlobe, FaGithub } from "react-icons/fa";
+import {ChevronRightIcon} from "@heroicons/react/24/solid";
 const ProjectsList = [
   {
     "name": "Acolyte",
@@ -26,8 +27,8 @@ const ProjectsList = [
 export default function Projects() {
   return (
     <section id="projects" className="p-5">
-      <div className="rounded-xl backdrop-blur bg-slate-950/50 border border-cyan-800 shadow-md shadow-cyan-800 p-5">
-        <h2 className="text-2xl font-semibold mb-1 py-1 text-center font-heading">
+      <div className="rounded-xl backdrop-blur bg-slate-950/50 border border-cyan-800 shadow-md shadow-cyan-800 p-5 flex flex-col items-end">
+        <h2 className="text-2xl font-semibold mb-1 py-1 text-center font-heading self-center">
           Projects
         </h2>
         <ul className="flex flex-col gap-4">
@@ -47,6 +48,7 @@ export default function Projects() {
           </li>
           ))}
         </ul>
+        <Link href={'/projects'} className={'flex items-center mt-4 hover:text-cyan-500 font-semibold'}>See More <ChevronRightIcon className={'h-4 w-4'}/></Link>
       </div>
     </section>
   );

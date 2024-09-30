@@ -66,7 +66,7 @@ export default function Projects() {
                     </p>
                 </div>
                 <div className="mt-10 sm:mt-20">
-                    <ul role={'list'} className={'grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3 p-2'}>
+                    <ul role={'list'} className={'grid grid-cols-1 gap-x-12 gap-y-8 lg:gap-y-16 sm:grid-cols-2 lg:grid-cols-3 p-2'}>
                         {projects.map((project) => (
                             <li key={project.name} className={'group relative flex flex-col items-start rounded-2xl p-4 transition ease-in hover:bg-slate-800/60 hover:scale-110 hover:shadow-cyan-600 hover:shadow-md hover:border hover:border-cyan-600'}>
                                 <div
