@@ -17,8 +17,17 @@ const config: Config = {
         'text': ['Tenor', 'sans-serif'],
         'heading': ['SedanSC', 'sans-serif']
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#f1f5f9',
+          }
+        }
+      }
     },
   },
-  plugins: [],
+  plugins: [
+      require('@tailwindcss/typography'),
+  ],
 };
 export default config;

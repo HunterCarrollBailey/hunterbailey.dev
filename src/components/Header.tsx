@@ -1,6 +1,5 @@
 'use client'
 
-import {useEffect, useRef, useState} from 'react';
 import Link from 'next/link';
 import {usePathname} from "next/navigation";
 import {Popover, PopoverBackdrop, PopoverButton, PopoverPanel} from "@headlessui/react";
@@ -46,7 +45,7 @@ function MobileNavigation(
                         <MobileNavItem href={"/about"}>About</MobileNavItem>
                         <MobileNavItem href={"/projects"}>Projects</MobileNavItem>
                         <MobileNavItem href={"/articles"}>Articles</MobileNavItem>
-                        <MobileNavItem href={"/tools"}>Tools</MobileNavItem>
+                        {/*<MobileNavItem href={"/tools"}>Tools</MobileNavItem>*/}
                     </ul>
                 </nav>
             </PopoverPanel>
@@ -82,7 +81,7 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>){
                 <NavItem href={"/about"}>About</NavItem>
                 <NavItem href={"/projects"}>Projects</NavItem>
                 <NavItem href={"/articles"}>Articles</NavItem>
-                <NavItem href={"/tools"}>Tools</NavItem>
+                {/*<NavItem href={"/tools"}>Tools</NavItem>*/}
             </ul>
         </nav>
     )
