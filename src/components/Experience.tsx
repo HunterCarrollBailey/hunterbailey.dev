@@ -1,6 +1,6 @@
 import Timeline from "@/components/Timeline";
 import Link from 'next/link';
-import Resume from "@/assets/BaileyRCarroll.pdf";
+const Resume = 'https://drive.google.com/file/d/1JHdcZUil-WpfKiG0dedAUAr1fenhkP3Z/view?usp=sharing';
 
 
 export default function Experience() {
@@ -14,10 +14,16 @@ export default function Experience() {
                 Recent Experience
             </h2>
             <Timeline/>
-            <button className="bg-slate-950/50 ring-1 ring-cyan-800 px-2 py-1 rounded-lg text-md shadow shadow-cyan-800 hover:-translate-y-1 hover:shadow-md hover:shadow-cyan-800 mt-5 ml-auto">
-              <Link href={Resume} target="_blank">Download Resume</Link>
-            </button>
-        </section>
+
+            <Link href={Resume} target="_blank" className={'ml-auto'}>
+                <button className="
+                bg-slate-950/50 ring-1 ring-cyan-800 px-2 py-1 rounded-lg text-md shadow shadow-cyan-800
+                hover:-translate-y-1 hover:shadow-md hover:shadow-cyan-800 mt-5">
+                    Download Resume
+                </button>
+            </Link>
     </section>
-  );
+</section>
+)
+    ;
 }
