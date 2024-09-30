@@ -1,11 +1,20 @@
-"use client";
-
+// app/articles/[slug]/page.tsx or app/articles/page.tsx if using app directory
+import React from 'react';
+import { getAllArticles, ArticleWithSlug } from '@/lib/articles';
 import Card from '@/components/Card';
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
-import { type ArticleWithSlug } from '@/lib/articles';
 import { formatDate } from '@/lib/formatDate';
 import { ChevronRightIcon } from '@heroicons/react/24/solid';
+import MDXContent from '@/components/MDXContent'; // Import the MDXContent component
+
+async function fetchArticles() {
+    const articles = await getAllArticles();
+
+    return articles.map(article => ({
+        ...article,
+        content: article.content, // Assuming `article.content` is already serialized in your `getAllArticles` function
+    }));
+}
 
 function Article({ article }: { article: ArticleWithSlug }) {
     return (
@@ -35,24 +44,16 @@ function Article({ article }: { article: ArticleWithSlug }) {
                     <Link href={`/articles/${article.slug}`}>Read Article</Link>
                     <ChevronRightIcon className={'ml-1 h-4 w-4 stroke-current'} />
                 </div>
+                <div className="prose dark:prose-dark mt-4">
+                    <MDXContent source={article.content} />
+                </div>
             </div>
         </article>
     );
 }
 
-export default function ArticlesIndex() {
-    const [articles, setArticles] = useState<ArticleWithSlug[] | null>(null);
-
-    useEffect(() => {
-        const fetchArticles = async () => {
-            const response = await fetch('/api/articles');
-            if (response.ok) {
-                const fetchedArticles = await response.json();
-                setArticles(fetchedArticles);
-            }
-        };
-        fetchArticles();
-    }, []);
+export default async function ArticlesIndex() {
+    const articles = await fetchArticles();
 
     return (
         <section className="p-5">
@@ -72,7 +73,7 @@ export default function ArticlesIndex() {
             <Card adlClasses={'mt-5 p-5'}>
                 <div className="md:border-1 md:border-cyan-500 md:pl-6">
                     <div className="flex flex-col max-w-3xl space-y-12">
-                        {articles ? (
+                        {articles.length > 0 ? (
                             articles.map((article) => (
                                 <Article article={article} key={article.slug} />
                             ))

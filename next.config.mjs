@@ -1,15 +1,8 @@
-/** @type {import('next').NextConfig} */
-import createMDX from '@next/mdx'
-import rehypePrism from '@mapbox/rehype-prism'
-import remarkGfm from 'remark-gfm'
+// next.config.mjs
+import withMDX from '@next/mdx';
 
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
-  experimental: {
-    outputFileTracingIncludes: {
-      '/articles/*': ['./src/app/articles/**/*.mdx'],
-    },
-  },
   output: 'standalone',
   webpack: (config, options) => {
     config.module.rules.push({
@@ -19,10 +12,10 @@ const nextConfig = {
     return config;
   },
 };
-const withMDX = createMDX({
+
+export default withMDX({
   extension: /\.mdx?$/,
   options: {
+    providerImportSource: '@mdx-js/react',
   },
-})
-
-export default withMDX(nextConfig);
+})(nextConfig);
