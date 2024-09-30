@@ -1,8 +1,6 @@
-// next.config.mjs
-import withMDX from '@next/mdx';
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx'],
   output: 'standalone',
   webpack: (config, options) => {
     config.module.rules.push({
@@ -13,9 +11,4 @@ const nextConfig = {
   },
 };
 
-export default withMDX({
-  extension: /\.mdx?$/,
-  options: {
-    providerImportSource: '@mdx-js/react',
-  },
-})(nextConfig);
+export default nextConfig;

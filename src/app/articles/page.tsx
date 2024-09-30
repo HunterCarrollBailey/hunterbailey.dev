@@ -1,20 +1,9 @@
-// app/articles/[slug]/page.tsx or app/articles/page.tsx if using app directory
 import React from 'react';
-import { getAllArticles, ArticleWithSlug } from '@/lib/articles';
 import Card from '@/components/Card';
 import Link from 'next/link';
+import { getAllArticles, ArticleWithSlug } from '@/lib/articles';
 import { formatDate } from '@/lib/formatDate';
 import { ChevronRightIcon } from '@heroicons/react/24/solid';
-import MDXContent from '@/components/MDXContent'; // Import the MDXContent component
-
-async function fetchArticles() {
-    const articles = await getAllArticles();
-
-    return articles.map(article => ({
-        ...article,
-        content: article.content, // Assuming `article.content` is already serialized in your `getAllArticles` function
-    }));
-}
 
 function Article({ article }: { article: ArticleWithSlug }) {
     return (
@@ -23,7 +12,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
                 <time dateTime={article.date} className="relative order-first mb-3 flex items-center text-sm text-slate-400">
                     <span className="absolute inset-y-0 left-0 flex items-center mt-2" aria-hidden={true}>
                         {formatDate(article.date)}
-                        <span className="h-4 w-0 5 rounded-full" />
+                        <span className="h-4 w-0.5 rounded-full" />
                     </span>
                 </time>
             </div>
@@ -34,7 +23,7 @@ function Article({ article }: { article: ArticleWithSlug }) {
                 <time dateTime={article.date} className="relative z-10 order-first mb-3 flex items-center text-sm text-slate-400 pl-3.5 mt-3 md:hidden">
                     <span className="absolute inset-y-0 left-0 flex items-center" aria-hidden={true}>
                         {formatDate(article.date)}
-                        <span className="h-4 w-0 5 rounded-full" />
+                        <span className="h-4 w-0.5 rounded-full" />
                     </span>
                 </time>
                 <p className="relative z-10 mt-2 text-sm text-slate-100">
@@ -44,16 +33,13 @@ function Article({ article }: { article: ArticleWithSlug }) {
                     <Link href={`/articles/${article.slug}`}>Read Article</Link>
                     <ChevronRightIcon className={'ml-1 h-4 w-4 stroke-current'} />
                 </div>
-                <div className="prose dark:prose-dark mt-4">
-                    <MDXContent source={article.content} />
-                </div>
             </div>
         </article>
     );
 }
 
 export default async function ArticlesIndex() {
-    const articles = await fetchArticles();
+    const articles: ArticleWithSlug[] = await getAllArticles();
 
     return (
         <section className="p-5">
@@ -63,10 +49,8 @@ export default async function ArticlesIndex() {
                         Writing on software development, gaming, and anything else that strikes my mind.
                     </h1>
                     <p className="mt-6 text-base">
-                        Over the years I{`'`}ve been told many a time, {`"`}You need to start a podcast.{`"`}, {`"`}You
-                        need to do some content creation.{`"`} or other such comments.
-                        So after some thought on it, I figured it would be nice to write down my thoughts on those {`"`}Soap
-                        Boxes{`"`} and finally put them out there.
+                        Over the years I’ve been told many a time, “You need to start a podcast,” “You need to do some content creation,” or other such comments.
+                        So after some thought on it, I figured it would be nice to write down my thoughts on those “Soap Boxes” and finally put them out there.
                     </p>
                 </div>
             </Card>

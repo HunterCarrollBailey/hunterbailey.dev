@@ -1,10 +1,9 @@
+import fs from 'fs';
 import path from 'path';
-import fs from 'fs/promises';
 import matter from 'gray-matter';
 import { serialize } from 'next-mdx-remote/serialize';
-import glob from 'fast-glob';
 
-interface Article {
+export interface Article {
     title: string;
     description: string;
     author: string;
@@ -13,30 +12,45 @@ interface Article {
 
 export interface ArticleWithSlug extends Article {
     slug: string;
-    content: any; // MDX content will be stored here
+    content: any;
 }
 
 export async function getAllArticles(): Promise<ArticleWithSlug[]> {
-    const articlesDirectory = path.join(process.cwd(), './src/app/articles');
-    const articleFilenames = await glob('**/page.mdx', {
-        cwd: articlesDirectory,
-    });
+    // Define the path to the articles directory
+    const articlesDirectory = path.join(process.cwd(), 'src/app/articles');
+
+    // Read all folders inside the articles directory
+    const articleFolders = await fs.promises.readdir(articlesDirectory);
 
     const articles = await Promise.all(
-        articleFilenames.map(async (filename) => {
-            const filePath = path.join(articlesDirectory, filename);
-            const fileContent = await fs.readFile(filePath, 'utf8');
+        articleFolders.map(async (folderName) => {
+            // Construct the path to the page.mdx file for each folder
+            const filePath = path.join(articlesDirectory, folderName, 'page.mdx');
 
+            // Check if the page.mdx file exists
+            if (!fs.existsSync(filePath)) {
+                console.error(`MDX file not found: ${filePath}`);
+                return null; // Return null if the file does not exist
+            }
+
+            // Read the content of the page.mdx file
+            const fileContent = await fs.promises.readFile(filePath, 'utf8');
+
+            // Extract frontmatter data and content using gray-matter
             const { data, content } = matter(fileContent);
-            const mdxSource = await serialize(content);
+
+            // Serialize the MDX content
+            const mdxContent = await serialize(content);
 
             return {
                 ...(data as Article),
-                slug: filename.replace(/(\/page)?\.mdx$/, ''),
-                content: mdxSource,
+                slug: folderName,   // Use the folder name as the article slug
+                content: mdxContent,
             };
         })
     );
 
-    return articles.sort((a, z) => +new Date(z.date) - +new Date(a.date));
+    // Filter out any articles that were null due to missing files
+    return articles.filter((article): article is ArticleWithSlug => article !== null)
+        .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }

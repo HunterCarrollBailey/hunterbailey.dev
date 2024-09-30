@@ -1,14 +1,15 @@
-"use client"; // Mark this as a client component
+"use client";
 
 import React from 'react';
 import { MDXRemote, MDXRemoteProps } from 'next-mdx-remote';
 
+// Define the props type for the MDXContent component
 interface MDXContentProps {
-    source: MDXRemoteProps['source'];
+    content: MDXRemoteProps; // This should match the serialized MDX content type
 }
 
-const MDXContent: React.FC<MDXContentProps> = ({ source }) => {
-    return <MDXRemote {...source} />;
+const MDXContent: React.FC<MDXContentProps> = ({ content }) => {
+    return <MDXRemote {...content} />;
 };
 
 export default MDXContent;
