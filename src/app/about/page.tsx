@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import portraitImage from '@/assets/Profile2.jpg';
+import portraitImage from '@/assets/Headshot.png';
 import Link from "next/link";
 import clsx from "clsx";
 import {FaGithub, FaLinkedin, FaSpotify} from "react-icons/fa";

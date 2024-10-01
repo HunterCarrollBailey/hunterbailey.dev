@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import Headshot from "@/assets/Headshot.jpg";
+import Headshot from "@/assets/Headshot.png";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaSpotify } from "react-icons/fa";
 import { Typewriter } from "react-simple-typewriter";
@@ -15,7 +15,7 @@ export default function Hero() {
           <Image
             src={Headshot}
             alt="Profile image of Hunter Bailey."
-            className="rounded-full ring-4 ring-cyan-400 w-[20dvw] md:w-[17dvw] lg:w-[15dvw] xl:w-[10dvw] -translate-y-12 shadow-xl shadow-cyan-800"
+            className="rounded-full ring-4 ring-cyan-400 h-48 w-48 -translate-y-12 shadow-xl shadow-cyan-800 object-cover object-top"
           />
           <h2 className="-translate-y-5 font-semibold text-xl md:font-2xl font-heading">
             Specialized In{" "}
