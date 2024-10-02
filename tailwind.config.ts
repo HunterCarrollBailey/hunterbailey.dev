@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import typography from '@tailwindcss/typography';
+import typography from "@tailwindcss/typography";
 
 const config: Config = {
   content: [
@@ -13,10 +13,11 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage: {
+        rose: "url(../assets/EnchantedRoseLogo.svg)",
+      },
     },
   },
-  plugins: [
-    typography,
-  ],
-}
+  plugins: [typography],
+};
 export default config;
