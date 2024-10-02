@@ -109,6 +109,7 @@ export function TimelineFull() {
     </div>
   );
 }
+// Smaller more condensed timeline for the home page, better sizing.
 export function TimelineHome() {
   return (
     <div className="flex flex-col p-5">

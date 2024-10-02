@@ -1,14 +1,18 @@
-import Heading from "@/app/components/typography/Headings";
-import Paragraph from "@/app/components/typography/Paragraphs";
-import Card from "@/app/components/cards/Card";
+// Next Components
 import Image from "next/image";
-import Headshot from "@/app/assets/Headshot.png";
 import Link from "next/link";
-import Button from "@/app/components/buttons/Button";
-import { TimelineHome } from "./components/lists/Timeline";
-import { ListNone } from "./components/lists/UnorderedLists";
+// Icons
 import { EnvelopeIcon } from "@heroicons/react/24/solid";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+// Custom Components
+import Button from "@/app/components/buttons/Button";
+import Card from "@/app/components/cards/Card";
+import Heading from "@/app/components/typography/Headings";
+import Headshot from "@/app/assets/Headshot.png";
+import { ListNone } from "@/app/components/lists/UnorderedLists";
+import Paragraph from "@/app/components/typography/Paragraphs";
+import { TimelineHome } from "@/app/components/lists/Timeline";
+// Resume Google Drive Link -> Imported here to keep HTML Cleaner
 const Resume =
   "https://drive.google.com/file/d/1JHdcZUil-WpfKiG0dedAUAr1fenhkP3Z/view?usp=sharing";
 
@@ -112,6 +116,16 @@ export default function Home() {
             >
               <EnvelopeIcon className="w-5 h-5 mr-4" />
               baileyrcarroll@gmail.com
+            </Link>
+          </li>
+          <li className="text-cyan-500 font-semibold">
+            <Link
+              href={"https://github.com/baileycarroll"}
+              target="_blank"
+              className="flex flex-row items-center"
+            >
+              <FaGithub className="w-5 h-5 mr-4" />
+              GitHub
             </Link>
           </li>
         </ListNone>
