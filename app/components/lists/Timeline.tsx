@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Logo from "@/app/assets/EnchantedRoseLogo.svg";
 import Link from "next/link";
+import Paragraph from "@/app/components/typography/Paragraphs";
 
 const events = [
   {
@@ -77,8 +78,8 @@ export function TimelineFull() {
             <span className="border-2 border-cyan-800 bg-cyan-800 rounded-t-full rounded-b-full w-1 h-full"></span>
           </div>
           <div className="flex flex-col px-4">
-            <h3 className="text-slate-400 text-sm">{event.dates}</h3>
-            <h4 className="text-slate-300 text-sm lg:text-md font-semibold flex flex-row align-top">
+            <h3 className="text-slate-400 text-md">{event.dates}</h3>
+            <h4 className="text-slate-300 text-md lg:text-md font-semibold flex flex-row align-top">
               {event.title} |{" "}
               {event.link !== "" ? (
                 <Link
@@ -92,7 +93,7 @@ export function TimelineFull() {
                 event.employer
               )}
             </h4>
-            <p className="text-slate-400 text-sm">{event.details}</p>
+            <Paragraph className="text-md">{event.details}</Paragraph>
             <ul className="flex flex-row flex-wrap gap-x-4 gap-y-2 mt-2">
               {event.skills.map((skill, index) => (
                 <li

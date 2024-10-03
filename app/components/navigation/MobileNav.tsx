@@ -59,6 +59,7 @@ export default function MobileNavigation(
           <ListNone className="-my2 divide-7 divide-cyan-800 text-base">
             <MobileNavItem href={"/"}>Home</MobileNavItem>
             <MobileNavItem href={"/about"}>About</MobileNavItem>
+            <MobileNavItem href={"/resume"}>Resume</MobileNavItem>
             <MobileNavItem href={"/projects"}>Projects</MobileNavItem>
             <MobileNavItem href={"/articles"}>Articles</MobileNavItem>
             <MobileNavItem href={"/tools"}>Tools</MobileNavItem>

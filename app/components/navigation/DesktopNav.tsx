@@ -37,6 +37,7 @@ export default function DesktopNavigation(
       <ListNoneHorizontal className="flex rounded-full bg-slate-800/80 px-3 text-md font-medium shadow-lg shadow-cyan-500/5 ring-1 ring-cyan-800/5 backdrop-blur">
         <NavItem href={"/"}>Home</NavItem>
         <NavItem href={"/about"}>About</NavItem>
+        <NavItem href={"/resume"}>Resume</NavItem>
         <NavItem href={"/projects"}>Projects</NavItem>
         <NavItem href={"/articles"}>Articles</NavItem>
         <NavItem href={"/tools"}>Tools</NavItem>

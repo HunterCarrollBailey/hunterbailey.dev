@@ -41,20 +41,31 @@ export default function Home() {
           or out dancing in the rain. I love what I do and am always looking for
           projects to work on or new things to create.
         </Paragraph>
-        <Link href={"/about"} className="self-end mt-auto font-semibold">
-          <Button className="text-slate-50">Read More</Button>
+        <Link
+          href={"/about"}
+          className="self-end mt-auto font-semibold mix-blend-normal"
+        >
+          <Button className="text-slate-50 mix-blend-normal">Read More</Button>
         </Link>
       </Card>
       <Card className="rounded-lg col-span-1 lg:col-span-2 lg:row-span-2 flex flex-col justify-center items-start">
         <Heading Level={5}>Recent Experience</Heading>
         <TimelineHome />
-        <Link
-          href={Resume}
-          target="_blank"
-          className="self-end text-cyan-500 font-semibold"
-        >
-          <Button className="text-slate-50">Download Resume</Button>
-        </Link>
+        <div className="flex flex-row gap-4 self-end mix-blend-normal">
+          <Link
+            href={"/resume"}
+            className="self-end text-cyan-500 font-semibold mt-auto mix-blend-normal"
+          >
+            <Button className="text-slate-50 mix-blend-normal">See More</Button>
+          </Link>
+          <Link
+            href={Resume}
+            target="_blank"
+            className="self-end text-cyan-500 font-semibold"
+          >
+            <Button className="text-slate-50">Download Resume</Button>
+          </Link>
+        </div>
       </Card>
       <Card className="rounded-lg col-span-1 lg:row-span-2 lg:col-span-2 lg:col-start-2 lg:row-start-3 flex flex-col justify-evenly">
         <Heading Level={5}>Recent Projects</Heading>
