@@ -53,30 +53,37 @@ export default function About() {
             Based in Seattle, making my mark on the world one line of code at a
             time.
           </Heading>
-          <Paragraph className="my-4">
+          <Paragraph className="my-2">
             I{`'`}ve been tinkering and working in the technical industry for
             over 12 years. I wrote my first {`"`}program{`"`} in Perl at 11
-            years old for a family friend in Reno, Nevada. When I wasn{`'`}t
-            engrossed with school, or tinkering with tech, I could be found nose
-            deep in a book or a video game exploring fantastical worlds.
+            years old for a family friend in Reno, Nevada (who was the ISP for
+            the valley I grew up in) it was a somewhat simple program that
+            helped them manage each of the customers networking equipment from
+            their local server.
           </Paragraph>
-          <Paragraph className="my-4">
+          <Paragraph className="my-2">
             When I was 19 I had corrective surgeries to fix the genetic
             deformities in my legs. During that recovery time a dear friend of
             mine approached me with an idea to deliver video content to a
             community gathering. This started what is my largest and most
-            passionate project, Acolyte. After several iterations and four major
-            versions the friend used the fourth version for a number of years to
-            distribute content to their users.
+            passionate project, Acolyte. Since then I dove further into the idea
+            of making products and things that improve not only my life, but the
+            lives of those I care about.
           </Paragraph>
-          <Paragraph className="my-4">
+          <Paragraph className="my-2">
+            While I have many side hobbies, I am a gamer at heart. I really
+            enjoy video games with a good amount of lore in them. One of my all
+            time favorites being the Elder Scrolls series. (I cannot pick just
+            one of them.) Other franchises such as Pokemon, Final Fantasy, The
+            Legend of Zelda, and the Soulsborne series are close to my heart as
+            well.
+          </Paragraph>
+          <Paragraph className="my-2">
             Today, I work as a <em>Senior Computer Specialist</em> for the
-            University of Washington, managing their Atlassian Infrastructure
-            and a couple of other notable development tools. On the side I am
-            working on the fifth version of Acolyte (which is a full re-write
-            from the ground up), as well as a couple of other projects. I do not
-            yet have my degree, though I am quickly working towards finishing
-            it, and am primarily self taught.
+            University of Washington during the day and like to spend my
+            evenings either at home with my house tiger (Leo) programming,
+            reading or playing video games. Or out exploring the beautiful city
+            I have made my home in.
           </Paragraph>
         </div>
         <div className="lg:pl-20 lg:pt-10">
