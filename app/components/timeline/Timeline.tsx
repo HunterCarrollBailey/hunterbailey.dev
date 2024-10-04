@@ -59,7 +59,7 @@ const events = [
     link: "https://coupa.com",
   },
   {
-    dates: "Ongoing",
+    dates: "Ongoing Project",
     title: "Lead Developer",
     employer: "Acolyte R.E.A.L.M.S.",
     details:
@@ -77,11 +77,11 @@ const events = [
     link: "https://github.com/baileycarroll/Acolyte-v4",
   },
   {
-    dates: "Ongoing",
+    dates: "Ongoing Project",
     title: "Developer",
     employer: "Corpus Vitae",
     details:
-      "Corpus Vitae is an ambitious project aimed at developing a holistic fitness, meal, and life-tracking app. I am leading the development of this cross-platform mobile application using Flutter, with the backend powered by MySQL for cloud storage. The app is designed to track workouts, meals, and various life activities, giving users a comprehensive tool to manage their daily habits. The front-end utilizes the Cupertino package for a sleek, iOS-inspired design, ensuring the app feels both modern and intuitive. Starting with SQLite for local storage, I am now expanding the app’s capabilities to support seamless cloud synchronization, making the user experience more dynamic and flexible.",
+      "Corpus Vitae (Core-Poos We-tay) is an ambitious project aimed at developing a holistic fitness, meal, and life-tracking app. I am leading the development of this cross-platform mobile application using Flutter, with the backend powered by MySQL for cloud storage. The app is designed to track workouts, meals, and various life activities, giving users a comprehensive tool to manage their daily habits. The front-end utilizes the Cupertino package for a sleek, iOS-inspired design, ensuring the app feels both modern and intuitive. Starting with SQLite for local storage, I am now expanding the app’s capabilities to support seamless cloud synchronization, making the user experience more dynamic and flexible.",
     skills: [
       "Flutter",
       "SQLite",
