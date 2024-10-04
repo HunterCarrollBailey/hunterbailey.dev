@@ -11,7 +11,7 @@ import Heading from "@/app/components/typography/Headings";
 import Headshot from "@/app/assets/Headshot.png";
 import { ListNone } from "@/app/components/lists/UnorderedLists";
 import Paragraph from "@/app/components/typography/Paragraphs";
-import { TimelineHome } from "@/app/components/lists/Timeline";
+import { TimelineHome } from "@/app/components/timeline/Timeline";
 import SkillsMarquee from "./components/marquee/SkillsMarquee";
 // Resume Google Drive Link -> Imported here to keep HTML Cleaner
 const Resume =

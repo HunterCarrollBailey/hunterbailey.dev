@@ -1,5 +1,5 @@
 import Card from "../components/cards/Card";
-import { TimelineFull } from "@/app/components/lists/Timeline";
+import { TimelineFull } from "@/app/components/timeline/Timeline";
 import Heading from "../components/typography/Headings";
 export default function Resume() {
   return (
