@@ -13,6 +13,7 @@ import Heading from "@/app/components/typography/Headings";
 import Headshot from "@/app/assets/Headshot.png";
 import { ListNone } from "@/app/components/lists/UnorderedLists";
 import Paragraph from "@/app/components/typography/Paragraphs";
+import Button from "../components/buttons/Button";
 
 function SocialLink({
   className,
@@ -120,11 +121,32 @@ export default function About() {
             <SocialLink
               href="mailto:baileyrcarroll@gmail.com"
               icon={EnvelopeIcon}
-              className="mt-8 border-t border-cyan-800 pt-8"
+              className="mt-8 border-t border-cyan-800 pt-4"
             >
               baileyrcarroll@gmail.com
             </SocialLink>
           </ListNone>
+          <div className="mt-4 border-t border-cyan-800 pt-4 flex flex-col items-start">
+            <Heading Level={6}>I Wrote A Book!</Heading>
+            <Paragraph className="my-2">
+              <em className="font-bold text-cyan-500">
+                A Warrior{`'`}s Journey:
+              </em>{" "}
+              A retelling of my life from the early years until the Spring of
+              2024, using freestyle poetry. Discussing the battles I faced and
+              my hope for the future.
+            </Paragraph>
+            <Button className="mt-2 self-end">
+              <Link
+                href={
+                  "https://www.barnesandnoble.com/w/a-warriors-journey-hunter-bailey/1146141656%3Bjsessionid=F3C2747E76FFF63C84E6CBB211E48FE3.prodny_store02-atgap08?ean=9798218480882"
+                }
+                target="_blank"
+              >
+                Barnes & Nobel
+              </Link>
+            </Button>
+          </div>
         </div>
       </Card>
     </section>
