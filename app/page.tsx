@@ -33,7 +33,7 @@ export default function Home() {
           Bailey Carroll
         </Heading>
         <Heading Level={6} className="mb-2 -translate-y-12">
-          Making My Mark - One Line of Code at a Time
+          Making My Mark | <span className="text-cyan-500">One Line of Code at a Time</span>
         </Heading>
         <Paragraph className="-translate-y-10">
           A software developer based in Seattle. Working on making my mark on
