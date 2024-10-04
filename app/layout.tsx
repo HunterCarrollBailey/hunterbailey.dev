@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import "./styles/globals.css";
 
@@ -16,10 +18,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full">
+      {/* Vercel Analytics */}
+      <Analytics />
       <body className="text-slate-50 bg-slate-900 antialiased bg-rose bg-fixed bg-no-repeat bg-center h-full">
         <Header />
         <main className="overflow-y-scroll">{children}</main>
       </body>
+      {/* Google Analytics */}
+      <GoogleAnalytics gaId="G-1TGMX650JG" />
     </html>
   );
 }
