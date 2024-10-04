@@ -72,7 +72,7 @@ export default function Home() {
         <Heading Level={6}>Recent Projects</Heading>
         <div className="grid grid-cols-2 gap-2 mt-2">
           <Card className="col-span-2 md:col-span-1 flex flex-col items-start">
-            <Heading Level={6}>A Warrior{`'`}s Journey</Heading>
+            <Heading Level={6}>Corpus Vitae</Heading>
             <Paragraph className="leading-tight">
               Building a comprehensive fitness, meal, and life-tracking app
               using Flutter for Android/iOS.
