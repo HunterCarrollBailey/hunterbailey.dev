@@ -15,12 +15,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`text-slate-50 bg-slate-900 antialiased bg-rose bg-no-repeat bg-center h-screen`}
-      >
+    <html lang="en" className="h-full">
+      <body className="text-slate-50 bg-slate-900 antialiased bg-rose bg-fixed bg-no-repeat bg-center h-full">
         <Header />
-        <main className="overflow-scroll max-h-[90dvh]">{children}</main>
+        <main className="overflow-y-scroll">{children}</main>
       </body>
     </html>
   );
