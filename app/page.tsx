@@ -23,7 +23,7 @@ export default function Home() {
       id="Home"
       className="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-5 gap-4 p-5 mt-6"
     >
-      <Card className="rounded-lg lg:row-span-4 col-span-1 flex flex-col justify-center items-start">
+      <Card className="rounded-lg lg:row-span-4 col-span-4 lg:col-span-1 flex flex-col justify-center items-start">
         <Image
           src={Headshot}
           alt="Profile image of Hunter Bailey."
@@ -49,7 +49,7 @@ export default function Home() {
           <Button className="text-slate-50 mix-blend-normal">Read More</Button>
         </Link>
       </Card>
-      <Card className="rounded-lg col-span-1 lg:col-span-2 lg:row-span-2 flex flex-col justify-center items-start overflow-hidden]">
+      <Card className="rounded-lg col-span-4 lg:col-span-2 lg:row-span-2 flex flex-col justify-center items-start overflow-hidden]">
         <Heading Level={6}>Recent Experience</Heading>
         <TimelineHome />
         <div className="flex flex-row gap-4 self-end mix-blend-normal">
@@ -68,7 +68,7 @@ export default function Home() {
           </Link>
         </div>
       </Card>
-      <Card className="rounded-lg col-span-1 lg:row-span-2 lg:col-span-2 lg:col-start-2 lg:row-start-3 flex flex-col justify-evenly">
+      <Card className="rounded-lg col-span-4 lg:row-span-2 lg:col-span-2 lg:col-start-2 lg:row-start-3 flex flex-col justify-evenly">
         <Heading Level={6}>Recent Projects</Heading>
         <div className="grid grid-cols-2 gap-2 mt-2">
           <Card className="col-span-2 md:col-span-1 flex flex-col items-start">
@@ -93,7 +93,7 @@ export default function Home() {
           <Button className="text-slate-50">Project List</Button>
         </Link>
       </Card>
-      <Card className="rounded-lg col-span-1 lg:row-span-4 lg:col-start-4 lg:row-start-1 flex flex-col justify-evenly">
+      <Card className="rounded-lg col-span-4 lg:col-span-1 lg:row-span-4 lg:col-start-4 lg:row-start-1 flex flex-col justify-evenly">
         <Heading Level={5}>Inner Thoughts</Heading>
         <Paragraph className="my-4">
           I know, scary to put inner thoughts onto a public place, but for years
