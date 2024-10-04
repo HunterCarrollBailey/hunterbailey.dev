@@ -1,33 +1,23 @@
 import type { Config } from "tailwindcss";
+import typography from "@tailwindcss/typography";
 
 const config: Config = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+      },
       backgroundImage: {
-        'rose' : "url(../assets/EnchantedRoseLogo.svg)",
-        'bookFront': "url(../assets/BookCoverFront.jpg)",
-        'bookBack': "url(../assets/BookCoverBack.jpg)"
+        rose: "url(../assets/EnchantedRoseLogo.svg)",
       },
-      fontFamily: {
-        'text': ['Tenor', 'sans-serif'],
-        'heading': ['SedanSC', 'sans-serif']
-      },
-      typography: {
-        DEFAULT: {
-          css: {
-            color: '#f1f5f9',
-          }
-        }
-      }
     },
   },
-  plugins: [
-      require('@tailwindcss/typography'),
-  ],
+  plugins: [typography],
 };
 export default config;
