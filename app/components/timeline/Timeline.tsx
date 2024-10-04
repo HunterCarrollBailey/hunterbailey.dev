@@ -147,7 +147,7 @@ export function TimelineFull() {
 export function TimelineHome() {
   return (
     <div className="flex flex-col p-5">
-      {events.map((event, index) => (
+      {events.slice(0, 3).map((event, index) => (
         <div key={index} className="flex flex-row mt-4">
           <div className="flex flex-col justify-center items-center">
             <Image
