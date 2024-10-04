@@ -17,10 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`text-slate-50 bg-slate-950 antialiased bg-rose bg-no-repeat bg-center h-screen`}
+        className={`text-slate-50 bg-slate-900 antialiased bg-rose bg-no-repeat bg-center h-screen`}
       >
         <Header />
-        <main className="overflow-scroll max-h-screen">{children}</main>
+        <main className="overflow-scroll max-h-[90dvh]">{children}</main>
       </body>
     </html>
   );

@@ -12,6 +12,7 @@ import Headshot from "@/app/assets/Headshot.png";
 import { ListNone } from "@/app/components/lists/UnorderedLists";
 import Paragraph from "@/app/components/typography/Paragraphs";
 import { TimelineHome } from "@/app/components/lists/Timeline";
+import SkillsMarquee from "./components/marquee/SkillsMarquee";
 // Resume Google Drive Link -> Imported here to keep HTML Cleaner
 const Resume =
   "https://drive.google.com/file/d/1JHdcZUil-WpfKiG0dedAUAr1fenhkP3Z/view?usp=sharing";
@@ -20,7 +21,7 @@ export default function Home() {
   return (
     <section
       id="Home"
-      className="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-4 gap-4 p-5 mt-6"
+      className="grid grid-cols-1 lg:grid-cols-4 lg:grid-rows-5 gap-4 p-5 mt-6"
     >
       <Card className="rounded-lg lg:row-span-4 col-span-1 flex flex-col justify-center items-start">
         <Image
@@ -48,8 +49,8 @@ export default function Home() {
           <Button className="text-slate-50 mix-blend-normal">Read More</Button>
         </Link>
       </Card>
-      <Card className="rounded-lg col-span-1 lg:col-span-2 lg:row-span-2 flex flex-col justify-center items-start">
-        <Heading Level={5}>Recent Experience</Heading>
+      <Card className="rounded-lg col-span-1 lg:col-span-2 lg:row-span-2 flex flex-col justify-center items-start overflow-hidden]">
+        <Heading Level={6}>Recent Experience</Heading>
         <TimelineHome />
         <div className="flex flex-row gap-4 self-end mix-blend-normal">
           <Link
@@ -68,29 +69,26 @@ export default function Home() {
         </div>
       </Card>
       <Card className="rounded-lg col-span-1 lg:row-span-2 lg:col-span-2 lg:col-start-2 lg:row-start-3 flex flex-col justify-evenly">
-        <Heading Level={5}>Recent Projects</Heading>
+        <Heading Level={6}>Recent Projects</Heading>
         <div className="grid grid-cols-2 gap-2 mt-2">
           <Card className="col-span-2 md:col-span-1 flex flex-col items-start">
             <Heading Level={6}>A Warrior{`'`}s Journey</Heading>
             <Paragraph className="leading-tight">
               Building a comprehensive fitness, meal, and life-tracking app
-              using Flutter for Android/iOS with a MySQL database for cloud
-              storage, starting with SQLite for local storage and expanding to a
-              web service.
+              using Flutter for Android/iOS.
             </Paragraph>
           </Card>
           <Card className="col-span-2 md:col-span-1">
             <Heading Level={6}>Acolyte</Heading>
             <Paragraph className="leading-tight">
               Designed and developed a custom Remote Engagement and Learning
-              Management System from the ground up, currently developing version
-              5 with a planned release in mid-2025.
+              Management System from the ground up.
             </Paragraph>
           </Card>
         </div>
         <Link
           href={"/projects"}
-          className="self-end text-cyan-500 font-semibold mt-4"
+          className="self-end text-cyan-500 font-semibold mt-auto"
         >
           <Button className="text-slate-50">Project List</Button>
         </Link>
@@ -146,6 +144,9 @@ export default function Home() {
         >
           <Button className="text-slate-50">See Articles</Button>
         </Link>
+      </Card>
+      <Card className="rounded-lg col-span-4 lg:row-span-1 lg:col-start-1 flex flex-col justify-center items-start">
+        <SkillsMarquee />
       </Card>
     </section>
   );

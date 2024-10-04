@@ -36,7 +36,7 @@ export default function MobileNavigation(
 ) {
   return (
     <Popover {...props}>
-      <PopoverButton className="group flex items-center rounded-full bg-slate-950/50 px-4 py-2 text-md font-medium text-slate-300 shadow-md shadow-cyan-800 backdrop-blur">
+      <PopoverButton className="group flex items-center rounded-full bg-slate-800/50 px-4 py-2 text-md font-medium text-slate-300 shadow-md shadow-cyan-800 backdrop-blur">
         Menu
         <ChevronDownIcon className="ml-3 h-auto w-2" />
       </PopoverButton>
@@ -62,7 +62,6 @@ export default function MobileNavigation(
             <MobileNavItem href={"/resume"}>Resume</MobileNavItem>
             <MobileNavItem href={"/projects"}>Projects</MobileNavItem>
             <MobileNavItem href={"/articles"}>Articles</MobileNavItem>
-            <MobileNavItem href={"/tools"}>Tools</MobileNavItem>
           </ListNone>
         </nav>
       </PopoverPanel>

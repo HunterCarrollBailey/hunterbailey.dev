@@ -40,7 +40,6 @@ export default function DesktopNavigation(
         <NavItem href={"/resume"}>Resume</NavItem>
         <NavItem href={"/projects"}>Projects</NavItem>
         <NavItem href={"/articles"}>Articles</NavItem>
-        <NavItem href={"/tools"}>Tools</NavItem>
       </ListNoneHorizontal>
     </nav>
   );

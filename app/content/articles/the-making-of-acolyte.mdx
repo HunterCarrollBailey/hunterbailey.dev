@@ -1,0 +1,58 @@
+---
+title: 'The Making of Acolyte'
+description: 'My journey in creating my largest project. What it is, and what it hopes to be.'
+author: 'Bailey Carroll'
+date: '10-01-2024'
+slug: 'the-making-of-acolyte'
+---
+# Overview
+Before I jump onto my soap-box about why I made this platform and my opinions on certain competitors in the market let's take a step back and talk about what Acolyte is, why there are two specific versions of it, and what the ultimate goal of the platform is.
+
+## What is Acolyte?
+In its most basic form, Acolyte is a content management system (CMS) focused on providing reliable ways to distribute many different media types. It was a concept of a concept that a close friend brought to me back in 2017, looking for a simple way to deliver pre-recorded video content and Google Drive links to members of a weekly group they led. Sensing something more could be built from this, I took the idea and ran with it. 
+
+This led to a very bare bones version of Acolyte written in bare PHP 7 and using Bootstrap for the UI Kit. It wasn't good, but it worked. However, this began a drive to continuously improve the project. Over the years I improved upon the design and am now working on the newest version. Which re-defines what Acolyte is as a whole.
+
+As of Version 5.0.0 Acolyte is a feature rich Remote Engagement and Learning Management System. (REALMS).
+
+### Wait... Remote Engagement?
+
+Yes you heard that right, after the global Covid-19 Pandemic, the eLearning industry has sorely needed a revamp and some significant updates. Current platforms feel disconnected, don't foster much in the terms of a community, and lack in... well engagement.
+
+Acolyte is looking to help this, not fix it, but to take a different approach. By integrating with several social media and networking tools, email providers, and video conferencing tools, it hopes to add a single place to have more connectivity and foster more engagement between it's users and their respective content creators.
+
+## Why the distinction of Version 4.0.0 and Version 5.0.0
+
+Well, this is mainly because Version 4.0.0 of Acolyte was written in Laravel 8 using MDBoostrap as a UI Kit, and only was a bare proof of concept of the idea. One of my clients used it for about 3 years ranging from 10 to 50 concurrent users a month. Which was a really big milestone for a proof of concept product. 
+
+However, it has a couple caveats that I really do not with to enforce by currently working on that platform. It represents where I was as an engineer 4 years ago. Not who I am currently or my skillset. So I am re-writing the project from the ground up, using the newer technologies of PHP 8.3, Laravel 11, Vue, and more importantly TailwindCSS. Yep, I'm doing away with the pre-built UI Kits, and will be bringing in Single Page Application (SPA) functionality where I can. This allows me to use some of the niceties of JavaScript for front-end development, while also keeping the backend in one of the most stable languages (one that was specifically designed for back-end work).
+
+### Why TailwindCSS of SaSS or CSS
+
+I chose to use TailwindCSS for two main reasons:
+1. Ease of Use
+2. Industry Standards
+
+Will CSS (and SaSS) will always reign as the foundations for web design, TailwindCSS allows for easy styling on the fly using class names. In addition the dynamic was to be able to add custom values to classes in the line without having to add style attributes is very helpful. 
+
+```html
+<div class='w-full md:w-[35dvw] lg:w-[50dvw]'>Some Content Here</div>
+```
+
+Not only was I able to adjust the display width for the different breakpoints, but I was also to use dynamic values instead of the ones hard coded into the style guides. And as TailwindCSS is gaining popularity (even as it is already popular) I can foresee a world where less actual CSS is written than using the base TailwindCSS library with some customizations and extensions.
+
+## What is the Ultimate Goal of Acolyte?
+
+The ultimate goal would be for Acolyte to become the biggest name for Learning Management. Most of the products that currently exists focused on the wrong user base, the instructors. They pumped money and time into making the instructor experience better, but they forgot the biggest user base of their platform. The Students/Learners, plagued with crashes, submission errors, random loss of points on quizzes, etc., created an environment where most every student has the same sentiment. "I really hated that program, it never worked."
+
+This is a widely known sentiment, but the powers that be have decided to do nothing about it; and the students take the brunt of the errors and issues because they use it the most. So, having used those platforms myself, I decided to try and tackle the problem and make a better solution.
+
+## Conclusion
+
+Acolyte is without a doubt my greatest endeavor, and achievement. Being the self taught programmer that I am, to have made something that made an impact to one person is amazing. But to have the desire and drive to continue expanding upon it and make it better, and maybe even make it able to challenge the heavy weights in the market is something I am proud of. There is a long road ahead, filled with much swearing, many coffee filled nights, and lots of music while I program and figure out how to make this solution a reality, but I look forward to the journey.
+
+### P.S. 
+If you would like to see some of the platform in progress while I work on this, you can take a look at the demo at [https://acolyte-v5.baileycarroll.dev](https://acolyte-v5.baileycarroll.dev). I'm keeping the source code of this platform private at this time, mainly because the powers that be should not have access to it <sup>1</sup>. But I will publish the UI and some features as they are done to the demo as I can, and feel comfortable doing so.
+
+
+<sup>1</sup> If they wanted to fix the issues, they would have. The sentiment has been there for more than 5 years from the general community. I won't be helping them here, they made their bed, now time to deal with the consequences.
